@@ -34,7 +34,7 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- Public Neutaware copy must not name the leadership team's earlier company. Describe Neutaware as a new AI-focused company; attribute 30+ years of global IT delivery experience, Fortune 500 work, expansion to 10 countries, a BSE listing within 10 years, and a later successful exit to the leadership team's prior experience, not to Neutaware's own history.
 
 ## Gotchas
 
