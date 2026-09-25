@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Neutaware"
+description = "A responsive corporate website for Neutaware, presenting its AI-led digital transformation capabilities, Microsoft business solutions, ISV products, company story, and contact options."
+version = "1.0.0"
+id = "artifacts/neutaware-site"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22383
+
+[services.development]
+run = "pnpm --filter @workspace/neutaware-site run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/neutaware-site", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/neutaware-site/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22383"
+BASE_PATH = "/"
