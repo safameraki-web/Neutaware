@@ -250,12 +250,14 @@ a { color: inherit; text-decoration: none; }
 .contact-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
 .contact-panel h2 { font: 600 clamp(35px,4vw,58px)/1.15 'Manrope',sans-serif; letter-spacing: -.06em; margin: 0 0 25px; }
 .contact-panel p { color: #5e7388; line-height: 1.75; font-size: 17px; }
+.contact-email-button { margin-top: 22px; }
 .contact-aside { background: #dfeff8; padding: 44px; border-top: 3px solid #0b82df; }
 .contact-aside h3 { font: 600 25px 'Manrope',sans-serif; letter-spacing: -.04em; margin: 0 0 16px; }
-.contact-aside ul { list-style: none; padding: 0; margin: 30px 0 0; }
-.contact-aside li { border-top: 1px solid #bfd6e5; padding: 15px 0; font-size: 14px; color: #344c64; }
-.contact-aside li::before { content: '↗'; color: #0b7bd7; margin-right: 14px; }
-.contact-notice { margin-top: 34px; padding: 18px 22px; border: 1px solid #c2dbe9; color: #506b82; font-size: 13px; line-height: 1.6; }
+.contact-details { margin: 28px 0; }
+.contact-details > div { border-top: 1px solid #bfd6e5; padding: 19px 0; }
+.contact-details span { display: block; color: #087bd9; font: 11px 'Space Mono',monospace; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 10px; }
+.contact-details a, .contact-details address { color: #173956; font: 500 17px/1.65 'Manrope',sans-serif; font-style: normal; overflow-wrap: anywhere; }
+.contact-details a:hover { color: #087bd9; }
 .not-found { min-height: 65dvh; display: flex; align-items: center; }
 .not-found h1 { font: 600 clamp(48px,7vw,90px) 'Manrope',sans-serif; letter-spacing: -.07em; }
 @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
