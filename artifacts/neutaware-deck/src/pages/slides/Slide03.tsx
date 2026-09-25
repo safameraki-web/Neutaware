@@ -1,0 +1,3 @@
+export default function Slide03() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><span>Neutaware</span><span>03 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">Leadership that has built at scale</h1><div className="deck-grid three"><div className="deck-card"><p>30+ years in global IT delivery</p></div><div className="deck-card"><p>Experience with Fortune 500 organizations</p></div><div className="deck-card"><p>A prior venture built from the ground up</p></div></div><div className="deck-footer"><span>Leadership</span><span>Intelligence. Governance. Impact.</span></div></div></div>;
+}

@@ -1,0 +1,3 @@
+export default function Slide08() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><span>Microsoft Business Solutions</span><span>08 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">Dynamics 365 Finance &amp; Operations</h1><ul className="deck-list"><li>Connect finance, procurement and supply chain</li><li>Improve visibility across core operations</li><li>Design processes that can evolve with the organization</li></ul><div className="deck-footer"><span>Enterprise operations</span><span>Neutaware</span></div></div></div>;
+}

@@ -1,0 +1,3 @@
+export default function Slide16() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><span>ISV Solutions</span><span>16 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">Animetra</h1><ul className="deck-list"><li>Wearable-informed animal health and performance direction</li><li>Bring vital trends, movement and activity into view</li><li>Explore anomaly alerts and individual-to-herd oversight</li><li>Intended capabilities, not established clinical performance</li></ul><div className="deck-footer"><span>Animal health</span><span>Neutaware</span></div></div></div>;
+}

@@ -1,0 +1,3 @@
+export default function Slide07() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><span>Neutaware</span><span>07 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">Microsoft Business Solutions</h1><ul className="deck-list compact"><li>Dynamics 365 Finance &amp; Operations</li><li>Dynamics 365 Business Central</li><li>Dynamics 365 CRM</li><li>Power Platform</li><li>Microsoft Copilot</li></ul><div className="deck-footer"><span>Microsoft solutions</span><span>Intelligence. Governance. Impact.</span></div></div></div>;
+}

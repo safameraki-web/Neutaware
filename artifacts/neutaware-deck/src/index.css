@@ -1,0 +1,83 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-primary: var(--slide-primary);
+  --color-accent: var(--slide-accent);
+  --color-bg: var(--slide-bg);
+  --color-text: var(--slide-text);
+  --color-muted: var(--slide-muted);
+  --font-display: var(--font-display-family);
+  --font-body: var(--font-body-family);
+}
+
+:root {
+  --slide-primary: #126bc9;
+  --slide-accent: #56cbe7;
+  --slide-bg: #f3f8fc;
+  --slide-text: #102849;
+  --slide-muted: #54718a;
+  --font-display-family: 'Manrope', sans-serif;
+  --font-body-family: 'DM Sans', sans-serif;
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--slide-bg);
+  color: var(--slide-text);
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide-viewer {
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.deck-slide { background: linear-gradient(135deg, #f8fbfd 0%, #edf5fa 100%); }
+.deck-inner { height: 100%; padding: 6vh 6vw 5vh; display: flex; flex-direction: column; }
+.deck-top { display: flex; justify-content: space-between; align-items: center; color: #466783; font-size: 1.5vw; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.deck-accent { width: 6vw; height: .45vh; background: var(--slide-primary); margin-top: 6vh; }
+.deck-title { max-width: 86vw; margin: 3vh 0 0; font: 800 4.15vw/1.12 'Manrope',sans-serif; letter-spacing: -.055em; text-wrap: balance; }
+.deck-list { margin: 6vh 0 0; padding: 0; list-style: none; display: grid; gap: 3.3vh; max-width: 83vw; }
+.deck-list li { position: relative; padding-left: 2.3vw; font-size: 2.25vw; line-height: 1.25; text-wrap: pretty; }
+.deck-list li::before { content: ''; position: absolute; top: .8vw; left: 0; width: .65vw; height: .65vw; background: var(--slide-primary); }
+.deck-footer { display: flex; justify-content: space-between; gap: 3vw; margin-top: auto; padding-top: 3vh; border-top: .12vh solid #c8dae6; color: #466783; font-size: 1.5vw; line-height: 1.2; letter-spacing: .03em; }
+.deck-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 2.2vw; margin-top: 6vh; }
+.deck-grid.three { grid-template-columns: repeat(3, minmax(0,1fr)); }
+.deck-card { background: #e5f0f8; border-top: .4vh solid var(--slide-primary); padding: 2.4vw; min-height: 18vh; display: flex; align-items: center; }
+.deck-card p { margin: 0; font-size: 2.1vw; line-height: 1.27; font-weight: 700; text-wrap: pretty; }
+.deck-grid.three .deck-card { min-height: 37vh; align-items: flex-end; }
+.deck-grid.three .deck-card p { font-size: 2vw; }
+.deck-list.compact { gap: 2.3vh; }
+.deck-list.compact li { font-size: 2.05vw; }
+.cover-layout { height: 100%; display: grid; grid-template-columns: 51% 49%; }
+.cover-content { padding: 7vh 6vw 6vh; background: #f3f8fc; display: flex; flex-direction: column; position: relative; z-index: 1; }
+.cover-logo { width: 23vw; height: auto; object-fit: contain; align-self: flex-start; }
+.cover-rule { width: 6vw; height: .45vh; background: var(--slide-primary); margin-top: auto; }
+.cover-title { font: 800 6.6vw/1.05 'Manrope',sans-serif; letter-spacing: -.065em; margin: 4vh 0 0; }
+.cover-tagline { font-size: 2.25vw; margin: 3vh 0 8vh; color: #496b85; line-height: 1.25; }
+.cover-image { width: 100%; height: 100%; object-fit: cover; }
+.cover-photo { position: relative; overflow: hidden; }
+.cover-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(12,44,87,.12), rgba(5,27,64,.05)); }
+.photo-split { display: grid; grid-template-columns: 56% 44%; height: 100%; }
+.photo-split .deck-inner { padding-right: 3vw; }
+.photo-split .deck-list { max-width: 46vw; }
+.photo-panel { position: relative; height: 100%; overflow: hidden; }
+.photo-panel img { width: 100%; height: 100%; object-fit: cover; }
+.photo-panel::after { content: ''; position: absolute; inset: 0; background: rgba(8,30,62,.08); }
+.contact-deck { background: linear-gradient(135deg,#f3f8fc 0%,#e5f1f8 100%); }
+.contact-deck .deck-title { max-width: 75vw; }
+.contact-deck .deck-list { gap: 2.4vh; }

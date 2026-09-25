@@ -1,0 +1,3 @@
+export default function Slide13() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><span>Neutaware</span><span>13 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">ISV Solutions</h1><ul className="deck-list compact"><li>OTiQ: operating theatre intelligence concept</li><li>Umbra: investigative intelligence concept</li><li>Animetra: animal health and performance direction</li><li>RehabSoft: therapy and rehabilitation workflow direction</li><li>Described as solution concepts and intended capabilities</li></ul><div className="deck-footer"><span>Focused innovation</span><span>Neutaware</span></div></div></div>;
+}

@@ -1,0 +1,3 @@
+export default function Slide15() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><span>ISV Solutions</span><span>15 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">Umbra</h1><ul className="deck-list"><li>Dark-web intelligence concept for authorized teams</li><li>Organize exposed breach intelligence into accountable workflows</li><li>Consider controlled discovery, bulk workflows and data sovereignty</li><li>Intended for lawful investigations with appropriate oversight</li></ul><div className="deck-footer"><span>Investigative intelligence</span><span>Neutaware</span></div></div></div>;
+}

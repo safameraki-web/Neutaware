@@ -1,0 +1,3 @@
+export default function Slide11() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><span>Microsoft Business Solutions</span><span>11 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">Power Platform</h1><ul className="deck-list"><li>Build practical low-code apps with Power Apps</li><li>Streamline workflows with Power Automate</li><li>Turn data into insight with Power BI</li><li>Scale with governance and Copilot Studio</li></ul><div className="deck-footer"><span>Low-code and insight</span><span>Neutaware</span></div></div></div>;
+}

@@ -1,0 +1,3 @@
+export default function Slide14() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><span>ISV Solutions</span><span>14 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">OTiQ</h1><ul className="deck-list"><li>Envisioned operating theatre readiness platform</li><li>Procedure-specific kit, instrument and supply visibility</li><li>Explore tracking, forecasting and reconciliation workflows</li><li>Concept only; no clinical outcome or certification claim</li></ul><div className="deck-footer"><span>Operating theatre intelligence</span><span>Neutaware</span></div></div></div>;
+}

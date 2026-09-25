@@ -1,0 +1,3 @@
+export default function Slide05() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><span>Neutaware</span><span>05 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">Our perspective on progress</h1><div className="deck-grid three"><div className="deck-card"><p>Intelligence: solve the real problem</p></div><div className="deck-card"><p>Governance: design for trust, security and accountability</p></div><div className="deck-card"><p>Impact: create durable value for people and organizations</p></div></div><div className="deck-footer"><span>Our principles</span><span>Intelligence. Governance. Impact.</span></div></div></div>;
+}

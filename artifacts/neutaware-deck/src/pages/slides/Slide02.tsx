@@ -1,0 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
+export default function Slide02() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="photo-split"><div className="deck-inner"><div className="deck-top"><span>Neutaware</span><span>02 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">A new journey, grounded in experience</h1><ul className="deck-list"><li>A new AI-focused company</li><li>Led by a team with 30+ years of global IT delivery experience</li><li>Modern platforms, human judgment and purposeful change</li></ul><div className="deck-footer"><span>Our story</span><span>Neutaware</span></div></div><div className="photo-panel"><img src={`${base}neutaware-collaboration.jpg`} crossOrigin="anonymous" alt="Technology professionals collaborating"/></div></div></div>;
+}

@@ -1,0 +1,3 @@
+export default function Slide09() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><span>Microsoft Business Solutions</span><span>09 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">Dynamics 365 Business Central</h1><ul className="deck-list"><li>Connect financial management, inventory and sales</li><li>Coordinate purchasing, projects and everyday operations</li><li>Keep implementation grounded in how teams work</li></ul><div className="deck-footer"><span>Connected business</span><span>Neutaware</span></div></div></div>;
+}

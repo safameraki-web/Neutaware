@@ -1,0 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
+export default function Slide19() {
+  return <div className="contact-deck relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><img src={`${base}neutaware-logo.png`} crossOrigin="anonymous" alt="Neutaware logo" className="cover-logo"/><span>19 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">Let’s talk about what matters next</h1><ul className="deck-list compact"><li>Explore Microsoft business transformation and AI adoption</li><li>Discuss industry-focused ISV solution directions</li><li>info@neutaware.com</li><li>Chennai, Tamil Nadu, India</li><li>neutaware.com</li></ul><div className="deck-footer"><span>Contact Neutaware</span><span>Intelligence. Governance. Impact.</span></div></div></div>;
+}

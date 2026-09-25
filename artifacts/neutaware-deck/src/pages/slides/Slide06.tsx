@@ -1,0 +1,3 @@
+export default function Slide06() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><span>Neutaware</span><span>06 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">Two complementary solution paths</h1><div className="deck-grid"><div className="deck-card"><p>Microsoft Business Solutions: connected enterprise platforms</p></div><div className="deck-card"><p>ISV Solutions: focused intelligence for complex domains</p></div></div><ul className="deck-list"><li>Both grounded in delivery experience and human needs</li></ul><div className="deck-footer"><span>Solutions</span><span>Intelligence. Governance. Impact.</span></div></div></div>;
+}

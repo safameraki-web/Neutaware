@@ -1,0 +1,3 @@
+export default function Slide12() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><span>Microsoft Business Solutions</span><span>12 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">Microsoft Copilot</h1><ul className="deck-list"><li>Explore AI assistance in Microsoft 365 and Dynamics</li><li>Identify business workflows where AI reduces friction</li><li>Ground adoption in security, oversight and human judgment</li></ul><div className="deck-footer"><span>Responsible enterprise AI</span><span>Neutaware</span></div></div></div>;
+}

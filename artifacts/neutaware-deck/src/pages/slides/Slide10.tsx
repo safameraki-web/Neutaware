@@ -1,0 +1,3 @@
+export default function Slide10() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><span>Microsoft Business Solutions</span><span>10 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">Dynamics 365 CRM</h1><ul className="deck-list"><li>Bring sales, service and marketing into a fuller customer view</li><li>Give customer-facing teams connected relationship context</li><li>Make information useful at the point of engagement</li></ul><div className="deck-footer"><span>Customer relationships</span><span>Neutaware</span></div></div></div>;
+}

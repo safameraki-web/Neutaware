@@ -1,0 +1,3 @@
+export default function Slide17() {
+  return <div className="deck-slide relative w-screen h-screen overflow-hidden bg-bg text-text font-body"><div className="deck-inner"><div className="deck-top"><span>ISV Solutions</span><span>17 / 19</span></div><div className="deck-accent"/><h1 className="deck-title">RehabSoft</h1><ul className="deck-list"><li>Cloud-based therapy and rehabilitation management direction</li><li>Connect registration, assessments and care plans</li><li>Support structured notes and progress visibility</li><li>No claim of commercial release or certified clinical outcome</li></ul><div className="deck-footer"><span>Rehabilitation workflows</span><span>Neutaware</span></div></div></div>;
+}

@@ -1,0 +1,28 @@
+kind = "slides"
+previewPath = "/neutaware-deck/"
+title = "Neutaware Project Overview"
+description = "A 19-slide professional presentation about Neutaware, its leadership journey, Microsoft business solutions, ISV concepts, responsible innovation, and contact information."
+version = "1.0.0"
+id = "artifacts/neutaware-deck"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/neutaware-deck/" ]
+localPort = 21309
+
+[services.development]
+run = "pnpm --filter @workspace/neutaware-deck run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/neutaware-deck", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/neutaware-deck/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21309"
+BASE_PATH = "/neutaware-deck/"
