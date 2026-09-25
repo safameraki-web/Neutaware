@@ -1,6 +1,7 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import { Link, Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import { ArrowRight, ChevronDown, Menu, X, Workflow, ChartNoAxesCombined, Bot, ShieldCheck, Activity, ScanLine, HeartPulse, DatabaseZap } from 'lucide-react';
+import { ContactForm } from './components/ContactForm';
 import './index.css';
 
 type Item = {
@@ -268,7 +269,7 @@ function About() {
 function Contact() {
   return <>
     <PageHero eyebrow="Contact Neutaware" title="Let's talk about what matters next." description="The most useful conversations start with a real challenge. Tell us what you're navigating, exploring or trying to change."/>
-    <section className="page-content"><div className="container contact-panel"><div><div className="eyebrow text-blue">Start with a conversation</div><h2>Good questions lead to better work.</h2><p>Whether you're rethinking core operations, exploring enterprise AI or interested in one of our solution directions, we welcome meaningful enquiries.</p><p>Share what you're working on, and we'll take the conversation from there.</p><a className="btn btn-blue contact-email-button" href="mailto:info@neutaware.com" data-testid="link-contact-email">Email us <ArrowRight size={18}/></a></div><aside className="contact-aside"><div className="eyebrow text-blue">Get in touch</div><h3>Find the right starting point.</h3><div className="contact-details"><div><span>Email</span><a href="mailto:info@neutaware.com">info@neutaware.com</a></div><div><span>Office</span><address>New No. 6, Old No. 69,<br/>Thygarayanagar, Chennai,<br/>Tamil Nadu, India 600017</address></div></div><p>Interested in Microsoft business transformation, responsible enterprise AI or one of our ISV solutions? We'd be glad to hear from you.</p></aside></div></section>
+    <section className="page-content"><div className="container contact-panel"><div><div className="eyebrow text-blue">Start with a conversation</div><h2>Good questions lead to better work.</h2><p>Whether you're rethinking core operations, exploring enterprise AI or interested in one of our solution directions, we welcome meaningful enquiries.</p><p>Share what you're working on, and we'll take the conversation from there.</p><a className="btn btn-blue contact-email-button" href="mailto:info@neutaware.com" data-testid="link-contact-email">Email us <ArrowRight size={18}/></a></div><aside className="contact-aside"><div className="eyebrow text-blue">Get in touch</div><h3>Find the right starting point.</h3><div className="contact-details"><div><span>Email</span><a href="mailto:info@neutaware.com">info@neutaware.com</a></div><div><span>Office</span><address>New No. 6, Old No. 69,<br/>Thygarayanagar, Chennai,<br/>Tamil Nadu, India 600017</address></div></div><p>Interested in Microsoft business transformation, responsible enterprise AI or one of our ISV solutions? We'd be glad to hear from you.</p></aside><ContactForm/></div></section>
   </>;
 }
 
