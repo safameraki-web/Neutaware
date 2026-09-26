@@ -76,17 +76,6 @@ const solutions: Item[] = [
 
 const products: Item[] = [
   {
-    title: 'OTiQ', path: '/products/otiq', eyebrow: 'Industry Solutions / Operating Theatre Intelligence',
-    intro: 'A more connected view of operating theatre readiness.',
-    body: 'OTiQ is an AI-powered Operating Theatre Intelligence Platform concept designed around Microsoft Dynamics 365 Business Central, Azure AI, Microsoft Copilot and RFID intelligence. It is envisioned to help teams manage risk and improve patient safety through better visibility of critical theatre resources.',
-    features: [
-      { title: 'Procedure-specific readiness', text: 'Bring the right kits, instruments and supplies into view before procedures.' },
-      { title: 'Intelligent supply planning', text: 'Support surgical supply-demand forecasting and timely expiry alerts.' },
-      { title: 'Traceable workflows', text: 'Explore instrument, tray and implant tracking, pre-closure reconciliations and an OT safety command center.' },
-    ],
-    note: 'OTiQ is presented as a platform concept and intended capability. No clinical outcome or regulatory certification is claimed.',
-  },
-  {
     title: 'Umbra', path: '/products/umbra', eyebrow: 'Industry Solutions / Dark-web Intelligence',
     intro: 'Structured intelligence for authorized investigation.',
     body: 'Umbra is a dark-web intelligence platform concept for authorized law-enforcement, corporate security and investigative teams. It is designed to organize exposed breach intelligence into controlled, accountable investigative workflows.',
@@ -96,6 +85,17 @@ const products: Item[] = [
       { title: 'Deployment choice', text: 'Consider local hosting, data sovereignty and optional secure deployment.' },
     ],
     note: 'Use is intended for authorized, lawful investigations with appropriate access controls and oversight.',
+  },
+  {
+    title: 'OTiQ', path: '/products/otiq', eyebrow: 'Industry Solutions / Operating Theatre Intelligence',
+    intro: 'A more connected view of operating theatre readiness.',
+    body: 'OTiQ is an AI-powered Operating Theatre Intelligence Platform concept designed around Microsoft Dynamics 365 Business Central, Azure AI, Microsoft Copilot and RFID intelligence. It is envisioned to help teams manage risk and improve patient safety through better visibility of critical theatre resources.',
+    features: [
+      { title: 'Procedure-specific readiness', text: 'Bring the right kits, instruments and supplies into view before procedures.' },
+      { title: 'Intelligent supply planning', text: 'Support surgical supply-demand forecasting and timely expiry alerts.' },
+      { title: 'Traceable workflows', text: 'Explore instrument, tray and implant tracking, pre-closure reconciliations and an OT safety command center.' },
+    ],
+    note: 'OTiQ is presented as a platform concept and intended capability. No clinical outcome or regulatory certification is claimed.',
   },
   {
     title: 'Animetra', path: '/products/animetra', eyebrow: 'Industry Solutions / Animal Health',
