@@ -1,0 +1,1 @@
+- [Public URL renames](public-url-renames.md) — keep old Neutaware URLs redirecting when visitor-facing solution paths change.

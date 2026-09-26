@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "Uk8xNIfoPDckfd_vQlGZH"
+uri = "file://.local/outputs/Neutaware-Project-Overview.pptx"
+type = "slides"
+title = "Neutaware Project Overview.pptx"
