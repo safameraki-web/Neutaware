@@ -1,0 +1,49 @@
+name: Deploy website to GoDaddy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'artifacts/neutaware-site/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+      - '.github/workflows/deploy-godaddy.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-godaddy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile --filter @workspace/neutaware-site...
+
+      - name: Build website
+        run: pnpm --filter @workspace/neutaware-site run build
+        env:
+          NODE_ENV: production
+          BASE_PATH: /
+
+      - name: Upload to GoDaddy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.GODADDY_FTP_SERVER }}
+          username: ${{ secrets.GODADDY_FTP_USERNAME }}
+          password: ${{ secrets.GODADDY_FTP_PASSWORD }}
+          local-dir: artifacts/neutaware-site/dist/public/
+          server-dir: ${{ secrets.GODADDY_FTP_DIR || 'public_html/' }}

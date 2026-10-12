@@ -1,0 +1,10 @@
+# Apache config for GoDaddy hosting: serve index.html for client-side routes
+# (e.g. /about) so direct links and page refreshes don't return 404.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
