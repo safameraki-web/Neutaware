@@ -2,8 +2,12 @@
   "name": "workspace",
   "version": "0.0.0",
   "license": "MIT",
+  "workspaces": [
+    "artifacts/neutaware-site"
+  ],
   "scripts": {
-    "build": "pnpm run typecheck && pnpm -r --if-present run build",
+    "build": "npm run build --workspace=@workspace/neutaware-site",
+    "build:all": "pnpm run typecheck && pnpm -r --if-present run build",
     "typecheck:libs": "tsc --build",
     "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck"
   },
