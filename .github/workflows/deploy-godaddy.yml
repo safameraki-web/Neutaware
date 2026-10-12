@@ -1,4 +1,4 @@
-name: Deploy website to GoDaddy
+name: Build website for GoDaddy
 
 on:
   push:
@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: deploy-godaddy
+  group: build-godaddy
   cancel-in-progress: false
 
 jobs:
@@ -39,11 +39,12 @@ jobs:
           NODE_ENV: production
           BASE_PATH: /
 
-      - name: Upload to GoDaddy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      # Download this zip from the run page and upload it to public_html
+      # with GoDaddy cPanel File Manager, then Extract it there.
+      - name: Package site for GoDaddy upload
+        uses: actions/upload-artifact@v4
         with:
-          server: ${{ secrets.GODADDY_FTP_SERVER }}
-          username: ${{ secrets.GODADDY_FTP_USERNAME }}
-          password: ${{ secrets.GODADDY_FTP_PASSWORD }}
-          local-dir: artifacts/neutaware-site/dist/public/
-          server-dir: ${{ secrets.GODADDY_FTP_DIR || 'public_html/' }}
+          name: neutaware-site
+          path: artifacts/neutaware-site/dist/public/
+          include-hidden-files: true
+          retention-days: 30
